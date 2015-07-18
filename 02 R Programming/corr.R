@@ -19,7 +19,11 @@ corr <- function(directory, threshold = 0) {
     if (length(t$id) > 0) {
         filenames = paste(directory,
                           "/",
-                          formatC(t$id,digits=0,width=3,flag="0",mode="integer"),
+                          formatC(t$id,
+                                  digits=0,
+                                  width=3,
+                                  flag="0",
+                                  mode="integer"),
                           ".csv", 
                           sep="")
         i = 1
